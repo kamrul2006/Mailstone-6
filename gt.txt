@@ -5,6 +5,10 @@ git branch -M main
 git remote add origin https://github.com/kamrul2006/Mailstone-6.git
 git push -u origin main
 
+
+------------------------------------------------------------
+
+
 ইন্টারভিউ প্রশ্নঃ
 এই মডিউল এ আমরা কয়েকটা জিনিস দেখবো। সেখান থেকে কয়েকটা জিনিস ইন্টারভিউতে প্রায়ই জিজ্ঞেস করে বসে। 
 
@@ -20,8 +24,6 @@ git push -u origin main
 ১০. Callback function কি জিনিস
 ১১. Hoisting কি জিনিস? (গুগলে সার্চ দিয়ে আরো ভালো করে শিখো )
 ১২. (এডভান্সড) কি ধরণের ভেরিয়েবল reference দিয়ে ফাংশনে পাঠানো হয় আর কোন ধরণের ভেরিয়েবল value হিসেবে পাঠানো হয়। 
-
-
 
 The Alchemist নামে একটা বই পড়ছিলাম। যেখানে Paulo Coelho বলছিলেন--
 “When we love, we always strive to become better than we are. When we strive to become better than we are, everything around us becomes better too.”

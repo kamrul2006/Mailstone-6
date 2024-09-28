@@ -1,4 +1,4 @@
-/**  <--------------------   8 ways to get undefined;  ---------------------->
+/**  --------------------   8 ways to get undefined:-  ----------------------
  * 1. variable that is not initialized.
  * 2. function with no return.
  * 3. parameter that is not passed will be undefined,
@@ -7,7 +7,7 @@
  * 6. accessing the array element outside of the index range.
  * 7. deleting an element inside of an array.
  * 8. if you directly set a value to undefined.
-*/
+**/
 
 let f;
 // console.log(f)
@@ -39,11 +39,11 @@ const ss = { name: 'Nadim', salery: 12000 };
 // console.log(ss.name, ss.age);
 
 
-const kk = [40, 50, 60, 70, 80];
+const kk = [40, 50, 60, 70, 80, 95];
 // console.log(kk[0], kk[1], kk[100]);
 
 
-delete kk[2]                                         //never use that , use splice.
+delete kk[2]                                         //never use that , (use 'splice' instead)
 // console.log(kk)
 
 
