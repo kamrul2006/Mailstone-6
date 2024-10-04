@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI Tube</title>
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
+
+
+    <!-- UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .active {
+            background-color: rgb(0, 160, 53);
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mx-5">
+        <nav class="flex justify-between items-center  mx-auto mt-2  lg:px-2 py-5 border-y border-green-400">
+            <img class="hidden lg:block w-48" src="./assets/Logo.png" alt="">
+            <img class="w-10 lg:hidden" src="./assets/fav.png" alt="">
+            <div>
+                <label class="px-3 lg:px-6 lg:py-2  py-1 rounded-3xl border-2 border-green-400 flex items-center gap-2">
+                    <input class="px-2 lg:px-4 lg:py-2 border-2 border-green-400" id="src" type="text" class="grow" placeholder="Search" />
+                    <img src="./assets/srcgreen.png" class="w-5">
+                </label>
+            </div>
+
+            <div class="flex justify-between items-center gap-3">
+                <button class="btn btn-xs lg:btn-md bg-green-500 ">Blog</button>
+                <button class="btn hidden lg:block ">Sort by view</button>
+
+            </div>
+
+        </nav>
+
+        <div id="btns" class="mx-auto text-center my-3 lg:my-7 flex gap-3  lg:gap-5 justify-center ">
+            <!-- Following btn will created by fetchs -->
+            <!-- <button class="btn  bg-green-500">All </button> -->
+            <!-- <button class="btn">Music</button>
+            <button class="btn">Comedy</button>
+            <button class="btn">Drawing</button> -->
+        </div>
+    </header>
+
+    <main>
+        <section id="video"
+            class=" mx-auto px-14 py-8 lg:py-5 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8  ">
+        </section>
+
+    </main>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-middle ">
+        <div class="modal-box  backdrop-blur-md bg-white/50 border-x-8 border-green-700">
+
+            <div class="flex justify-between items-center">
+                <p class="py-4 text-xs text-gray-400">Press ESC key or click the button below to close</p>
+                <img class="w-6 lg:w-10" src="./assets/fav.png" alt="">
+            </div>
+
+            <p id="dis" class="text-lg text-justify font-medium font-serif">
+
+            </p>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn btn-sm bg-green-400">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
