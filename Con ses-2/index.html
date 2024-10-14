@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="flex justify-between items-center px-2 py-2 mx-1 my-1 border-2 border-primary rounded-3xl ">
+            <h2 class="font-bold text-lg font-serif italic text-purple-700 text-gray-500 ml-4">Phone hunter </h2>
+            <button class="btn btn-primary"> Sing Up</button>
+        </nav>
+        <hr>
+
+        <section class="text-center">
+            <div class="bg-red-100 py-4">
+                <h1 class="text-4xl lg:text-7xl font-bold">Apple Iphone 13 Pro Max</h1>
+                <h3 class="mt-4 font-medium text-sm lg:text-lg text-gray-500 px-3">
+                    There are many variations of passages of Lorem Ipsum available, <br>but the majority have suffered
+                    alteration in some form,
+                    by injected humou.
+                </h3>
+                <button class="btn btn-primary mt-4"> Bye Now</button>
+                <img class="mx-auto w-[70%] lg:w-[50%]" src="./iphone.png" alt="">
+
+            </div>
+
+
+        </section>
+    </header>
+
+    <main>
+
+        <!--                              Search                        -->
+
+        <div class="mx-6 lg:mx-60 my-10">
+            <h1
+                class="text-center text-xl font-bold lg:text-3xl italic bg-violet-300 w-fit mx-auto p-2 rounded-3xl flex gap-2 items-center">
+                Search your phone
+                <img src="./arrow .svg" class="w-9">
+            </h1>
+            <label class=" flex items-center  mt-4">
+                <input id="sbar" type="text" class="grow input input-primary" placeholder="Search your phone here." />
+                <button onclick="HandleSearch()" class="btn btn-primary"> Search</button>
+            </label>
+        </div>
+
+        <!--                                     Card Div               -->
+        <div id="cardDiv" class=" my-8 text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+
+
+        </div>
+
+        <div class="text-center my-3">
+            <!--        loader          -->
+            <span id="loder" style="display: none;" class=" p-10 ml-[48%] loading loading-bars loading-lg"> </span>
+            <!--            show All btn -->
+            <button onclick="HandleShowAll()" class="btn btn-success btn-sm lg:btn-lg  items-center"> Show All
+                <img src="./arrow .svg" class="w-5">
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer footer-center text-black bg-gray-300 text-primary-content p-10">
+        <aside>
+            <img src="./phone.png" alt="">
+            <p class="font-bold">
+                Phone Hunter Industries Ltd.
+                <br />
+                Providing reliable tech since 1992
+            </p>
+            <p>Copyright © 2025 - All right reserved</p>
+        </aside>
+
+        <img src="./social-media-5995266_640.png" class=" w-32">
+
+    </footer>
+
+    <!--            modal            -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-middle">
+        <div class="modal-box">
+            <div id="dtext">
+
+
+
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
